@@ -66,7 +66,7 @@ If configured correctly, transaction `SMICM` > Goto > Services (`Shift + F1`) wi
 
 ![ssl_setup_services](/img/ssl_setup_services.png)
 
-### SAP Trust Manager
+### SAP Trust Manager (S/4Hana On-Premise or Private Cloud)
 
 As a default, abapGit uses an anonymous client connection (`ANONYM - SSL Client (Anonymous)`). A secure connection requires that the Git server certificate is available in the certificate list. The certificate must also be valid!
 
@@ -119,6 +119,11 @@ If done correctly, transaction `STRUST` will show the Git server certificates in
 5. Select "Add to certificate list"
 6. Repeat the process for all downloaded certificates
 7. Save
+
+### SAP Trust Manager (S/4Hana Public Cloud)
+1. Download the certificates as describe for S/4Hana On-Premise or Private Cloud
+2. Install the certificates in FioriApp: Maintain Certificate Trust List
+   Just click on + under Filter and add the new certificate
 
 ### abapGit Settings
 
